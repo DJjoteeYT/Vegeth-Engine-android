@@ -3738,12 +3738,12 @@ class PlayState extends MusicBeatState
 					transOut = FlxTransitionableState.defaultTransOut;
 
 					switch(curSong.toLowerCase()){
-						case 'stress': 
+						/*case 'stress': 
 							isCutscene = true;
 							FlxG.switchState(new VideoState(Paths.video('kickstarterTrailer'),true,function() {
 								FlxG.sound.playMusic(Paths.music('freakyMenu'));
 								LoadingState.loadAndSwitchState(new MainMenuState());
-							}));
+							}));*/
 						default: 
 							new FlxTimer().start(1, function(tmr:FlxTimer){
 								FlxG.sound.playMusic(Paths.music('freakyMenu'));
@@ -3778,11 +3778,11 @@ class PlayState extends MusicBeatState
 					}
 					#end
 
-					if (SONG.validScore)
+					/*if (SONG.validScore)
 					{
 						NGio.unlockMedal(60961);
 						Highscore.saveWeekScore(storyWeek, campaignScore, storyDifficulty);
-					}
+					}*/
 
 					StoryMenuState.unlockNextWeek(storyWeek);
 				}
@@ -3822,14 +3822,14 @@ class PlayState extends MusicBeatState
 					FlxG.sound.music.stop();
 
 					switch(curSong.toLowerCase()){
-						case 'ugh':
+						/*case 'ugh':
 							FlxG.switchState(new VideoState(Paths.video('gunsCutscene'),true,function() {
 								LoadingState.loadAndSwitchState(new PlayState());
 							}));
 						case 'guns':
 							FlxG.switchState(new VideoState(Paths.video('stressCutscene'),true,function() {
 								LoadingState.loadAndSwitchState(new PlayState());
-							}));
+							}));*/
 						default: 
 							LoadingState.loadAndSwitchState(new PlayState());
 						
