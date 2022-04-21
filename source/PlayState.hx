@@ -13,9 +13,9 @@ import openfl.ui.Keyboard;
 import openfl.events.KeyboardEvent;
 import Replay.Ana;
 import Replay.Analysis;
-#if cpp
+/*#if cpp
 import webm.WebmPlayer;
-#end
+#end*/
 import flixel.input.keyboard.FlxKey;
 import haxe.Exception;
 import openfl.geom.Matrix;
@@ -3780,7 +3780,7 @@ class PlayState extends MusicBeatState
 
 					/*if (SONG.validScore)
 					{
-						NGio.unlockMedal(60961);
+						.unlockMedal(60961);
 						Highscore.saveWeekScore(storyWeek, campaignScore, storyDifficulty);
 					}*/
 
@@ -4427,7 +4427,7 @@ class PlayState extends MusicBeatState
 	public var fuckingVolume:Float = 1;
 	public var useVideo = false;
 
-	public static var webmHandler:WebmHandler;
+	//public static var webmHandler:WebmHandler;
 
 	public var playingDathing = false;
 
@@ -4457,7 +4457,7 @@ class PlayState extends MusicBeatState
 
 	public function backgroundVideo(source:String) // for background videos
 	{
-		#if cpp
+		/*#if cpp
 		useVideo = true;
 
 		FlxG.stage.window.onFocusOut.add(focusOut);
@@ -4511,7 +4511,7 @@ class PlayState extends MusicBeatState
 		else
 			webmHandler.resume();
 		#end
-	}
+	}*/
 
 	function noteMiss(direction:Int = 1, daNote:Note):Void
 	{
