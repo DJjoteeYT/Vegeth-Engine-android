@@ -264,7 +264,7 @@ class TitleState extends MusicBeatState
 
 		var pressedEnter:Bool = controls.ACCEPT;
 
-		#if mobile
+		#if mobileC
 		for (touch in FlxG.touches.list)
 		{
 			if (touch.justPressed)
@@ -274,7 +274,7 @@ class TitleState extends MusicBeatState
 		}
 		#end
 
-		if (pressedEnter && !transitioning && skippedIntro)
+		/*if (pressedEnter && !transitioning && skippedIntro)
 		{
 			#if !switch
 			NGio.unlockMedal(60960);
@@ -282,7 +282,7 @@ class TitleState extends MusicBeatState
 			// If it's Friday according to da clock
 			if (Date.now().getDay() == 5)
 				NGio.unlockMedal(61034);
-			#end
+			#end*/
 
 			if (FlxG.save.data.flashing)
 				titleText.animation.play('press');
