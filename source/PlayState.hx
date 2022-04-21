@@ -70,7 +70,7 @@ import openfl.display.BlendMode;
 import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
 
-import VideoState;
+//import VideoState;
 
 #if windows
 import Discord.DiscordClient;
