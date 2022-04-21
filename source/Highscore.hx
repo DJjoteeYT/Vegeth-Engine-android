@@ -19,9 +19,9 @@ class Highscore
 		var daSong:String = formatSong(song, diff);
 
 
-		#if !switch
+		/*#if !switch
 		NGio.postScore(score, song);
-		#end
+		#end*/
 
 		if(!FlxG.save.data.botplay)
 		{
