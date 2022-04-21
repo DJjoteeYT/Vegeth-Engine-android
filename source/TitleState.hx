@@ -330,7 +330,6 @@ class TitleState extends MusicBeatState
 		}
 
 		super.update(elapsed);
-	}
 
 	function createCoolText(textArray:Array<String>)
 	{
